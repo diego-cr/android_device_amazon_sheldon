@@ -39,4 +39,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 	PRODUCT_NAME=sheldon \
 	PRIVATE_BUILD_DESC="sheldon-user 7.0 PS7249 2719 amz-p,release-keys"
 
-BUILD_FINGERPRINT := Amazon/sheldon/sheldon:7.0/PS7249/2719N:user/amz-p,release-keys
+BUILD_FINGERPRINT := NVIDIA/foster_e/foster:5.1/LMY47D/35739_609.6420:user/release-keys
