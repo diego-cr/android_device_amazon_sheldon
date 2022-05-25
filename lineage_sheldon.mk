@@ -28,8 +28,8 @@ $(call inherit-product, device/amazon/sheldon/go_opt.mk)
 
 PRODUCT_NAME := lineage_sheldon
 PRODUCT_DEVICE := sheldon
-PRODUCT_MANUFACTURER := Amazon
-PRODUCT_BRAND := Amazon
+PRODUCT_MANUFACTURER := amzn
+PRODUCT_BRAND := amzn
 PRODUCT_MODEL := AFTSS
 
 # Client ID
