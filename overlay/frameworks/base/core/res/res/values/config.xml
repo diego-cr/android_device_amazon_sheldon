@@ -98,4 +98,13 @@
          property. If this is false, then the following recents config flags are ignored. -->
     <bool name="config_hasRecents">false</bool>
 
+    <!-- Flag indicating whether all audio streams should be mapped to
+         one single stream. If true, all audio streams are mapped to
+         STREAM_MUSIC as if it's on TV platform. -->
+    <bool name="config_single_volume">true</bool>
+
+    <!-- Flag indicating that the media framework should not allow changes or mute on any
+         stream or master volumes. -->
+    <bool name="config_useFixedVolume">true</bool>
+
 </resources>
