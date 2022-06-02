@@ -29,6 +29,7 @@ PRODUCT_AAPT_PREF_CONFIG := tvdpi
 # Characteristics
 PRODUCT_CHARACTERISTICS := tv
 PRODUCT_IS_ATV := true
+TARGET_ATV_RES_FORCE := false
 USE_OEM_TV_APP := true
 
 # Enable DM file pre-opting to reduce first boot time
