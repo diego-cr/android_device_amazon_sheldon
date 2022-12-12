@@ -1,3 +1,8 @@
 type mt_securetime_exec, exec_type, file_type, vendor_file_type;
 type mt_securetime ,domain;
 init_daemon_domain(mt_securetime)
+allow mt_securetime trustzone_device:chr_file { read write };
+allow mt_securetime vendor_data_file:file { read write };
+allow mt_securetime trustzone_device:chr_file open;
+allow mt_securetime vendor_data_file:file open;
+allow mt_securetime trustzone_device:chr_file ioctl;

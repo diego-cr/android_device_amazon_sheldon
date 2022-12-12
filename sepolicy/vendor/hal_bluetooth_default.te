@@ -1,0 +1,2 @@
+allow hal_bluetooth_default default_android_hwservice:hwservice_manager find;
+allow hal_bluetooth_default hal_amzn_idme_default:binder call;

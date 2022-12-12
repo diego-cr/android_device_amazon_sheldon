@@ -1,0 +1,5 @@
+allow hal_keymaster_default device:chr_file ioctl;
+allow hal_keymaster_default device:chr_file { read write };
+allow hal_keymaster_default trustzone_device:chr_file { read write };
+allow hal_keymaster_default trustzone_device:chr_file open;
+allow hal_keymaster_default trustzone_device:chr_file ioctl;

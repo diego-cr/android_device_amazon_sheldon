@@ -1,0 +1,6 @@
+allow system_app selinuxfs:file { open read };
+allow system_app installd:binder call;
+allow system_app netd:binder call;
+#allow system_app storaged:binder call;
+#allow system_app system_suspend:binder call;
+allow system_app vold:binder call;

@@ -1,0 +1,1 @@
+allow gmscore_app atci_sys_prop:file { getattr open };

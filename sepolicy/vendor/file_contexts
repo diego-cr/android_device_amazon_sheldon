@@ -20,3 +20,4 @@
 /(system|system\/vendor|vendor)/bin/hw/fireos\.hardware\.hdcp@1\.0-service                            u:object_r:hal_amzn_hdcp_default_exec:s0
 /(system|system\/vendor|vendor)/bin/hw/fireos\.hardware\.hdmitxinfo@1\.0-service                      u:object_r:hal_amzn_hdmitxinfo_default_exec:s0
 /(system|system\/vendor|vendor)/bin/hw/fireos\.hardware\.idme@1\.0-service                            u:object_r:hal_amzn_idme_default_exec:s0
+/vendor/bin/hw/fireos.hardware.audio@2.0-service                                                      u:object_r:hal_amzn_audio_default_exec:s0

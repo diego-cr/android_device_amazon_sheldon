@@ -1,0 +1,8 @@
+allow shell kernel:system syslog_read;
+allow shell mirror_data_file:dir getattr;
+allow shell init_exec:lnk_file getattr;
+allow shell linkerconfig_file:dir getattr;
+allow shell postinstall_mnt_dir:dir getattr;
+allow shell rootfs:file getattr;
+#!!!! This avc is allowed in the current policy
+allow shell vendor_toolbox_exec:file { execute getattr };

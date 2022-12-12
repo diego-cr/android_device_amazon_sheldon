@@ -1,0 +1,24 @@
+type hal_amzn_audio_default_exec, exec_type, file_type, vendor_file_type;
+type hal_amzn_audio_default ,domain;
+
+typeattribute hal_amzn_audio_default_exec coredomain;
+domain_auto_trans(init, hal_amzn_audio_default_exec, hal_amzn_audio_default);
+allow hal_amzn_audio_default audio_device:chr_file { ioctl open read write };
+allow hal_amzn_audio_default audioserver:binder transfer;
+allow hal_amzn_audio_default audioserver:fd use;
+allow hal_amzn_audio_default audioserver:fifo_file write;
+allow hal_amzn_audio_default default_prop:file { getattr open read };
+allow hal_amzn_audio_default device:chr_file { open read };
+allow hal_amzn_audio_default graphics_device:chr_file { ioctl open read write };
+allow hal_amzn_audio_default hwservicemanager:binder { call transfer };
+allow hal_amzn_audio_default hwservicemanager_prop:file { getattr open read };
+allow hal_amzn_audio_default proc_asound:dir search;
+allow hal_amzn_audio_default proc_asound:file { getattr open read };
+allow hal_amzn_audio_default vndbinder_device:chr_file { ioctl open read write };
+allow hal_amzn_audio_default vndservicemanager:binder { call transfer };
+allow hal_amzn_audio_default default_android_hwservice:hwservice_manager { add find };
+allow hal_amzn_audio_default default_android_vndservice:service_manager add;
+allow hal_amzn_audio_default hal_audio_hwservice:hwservice_manager { add find };
+allow hal_amzn_audio_default hidl_base_hwservice:hwservice_manager add;
+allow hal_amzn_audio_default audio_device:dir search;
+#!!!! This avc is allowed in the current policy

@@ -1,3 +1,9 @@
 type amzn_xo_tool_exec, exec_type, file_type, vendor_file_type;
 type amzn_xo_tool ,domain;
 init_daemon_domain(amzn_xo_tool)
+allow amzn_xo_tool proc:file getattr;
+allow amzn_xo_tool proc:file read;
+allow amzn_xo_tool proc:file open;
+allow amzn_xo_tool property_socket:sock_file write;
+allow amzn_xo_tool init:unix_stream_socket connectto;
+allow amzn_xo_tool default_prop:property_service set;

@@ -1,0 +1,2 @@
+allow zygote device:file { open write };
+allow zygote vendor_file:file { execute getattr open read };

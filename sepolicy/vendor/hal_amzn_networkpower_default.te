@@ -1,3 +1,10 @@
 type hal_amzn_networkpower_default_exec, exec_type, file_type, vendor_file_type;
 type hal_amzn_networkpower_default ,domain;
 init_daemon_domain(hal_amzn_networkpower_default)
+allow hal_amzn_networkpower_default hwservicemanager_prop:file read;
+allow hal_amzn_networkpower_default hwservicemanager_prop:file open;
+allow hal_amzn_networkpower_default hwservicemanager_prop:file getattr;
+allow hal_amzn_networkpower_default hwservicemanager:binder call;
+allow hal_amzn_networkpower_default hwservicemanager:binder transfer;
+allow hal_amzn_networkpower_default hidl_base_hwservice:hwservice_manager add;
+allow hal_amzn_networkpower_default default_android_hwservice:hwservice_manager add;

@@ -1,0 +1,2 @@
+allow system_server net_dn_prop:property_service set;
+allow system_server proc:file { getattr open read };

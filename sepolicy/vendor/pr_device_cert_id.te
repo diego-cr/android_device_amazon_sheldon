@@ -1,3 +1,17 @@
 type pr_device_cert_id_exec, exec_type, file_type, vendor_file_type;
 type pr_device_cert_id ,domain;
 init_daemon_domain(pr_device_cert_id)
+allow pr_device_cert_id vendor_data_file:dir write;
+allow pr_device_cert_id vendor_data_file:file { read write };
+allow pr_device_cert_id vendor_data_file:dir remove_name;
+allow pr_device_cert_id vendor_data_file:file open;
+allow pr_device_cert_id vendor_data_file:file { lock unlink };
+allow pr_device_cert_id trustzone_device:chr_file { read write };
+allow pr_device_cert_id vendor_data_file:dir add_name;
+allow pr_device_cert_id vendor_data_file:file create;
+allow pr_device_cert_id trustzone_device:chr_file open;
+allow pr_device_cert_id trustzone_device:chr_file ioctl;
+allow pr_device_cert_id kisd:unix_stream_socket connectto;
+allow pr_device_cert_id property_socket:sock_file write;
+allow pr_device_cert_id init:unix_stream_socket connectto;
+allow pr_device_cert_id vendor_default_prop:property_service set;
