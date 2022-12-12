@@ -51,8 +51,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # RRO
 PRODUCT_PACKAGES += \
-    WifiOverlay \
-    NetflixConfigOverlay
+    WifiOverlay 
 
 # Graphics
 PRODUCT_PACKAGES += \
@@ -197,14 +196,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(DEVICE_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
-
-# Netflix
-PRODUCT_PACKAGES += \
-    NetflixConfig
-
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/permissions/netflix.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/netflix.xml \
-    $(DEVICE_PATH)/configs/permissions/nrdp.modelgroup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/nrdp.modelgroup.xml
 
 # Shims
 PRODUCT_PACKAGES += \

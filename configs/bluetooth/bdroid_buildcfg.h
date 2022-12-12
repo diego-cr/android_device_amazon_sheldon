@@ -21,6 +21,11 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
+#define BTA_AV_MAX_A2DP_MTU  1788
+#define BLE_INCLUDED TRUE
+#define BTA_GATT_INCLUDED TRUE
+#define SMP_INCLUDED TRUE
+
 // Hack to keep PnP version instead of HID version
 // Needed to differentiate Amazon remote SKUs
 #include <gattdefs.h>

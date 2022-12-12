@@ -46,7 +46,7 @@ dalvik.vm.heapgrowthlimit=128m
 dalvik.vm.heapsize=256m
 
 # Netflix
-ro.vendor.nrdp.audio.mixer.buffersize=2048
+#ro.vendor.nrdp.audio.mixer.buffersize=2048
 ro.vendor.nrdp.modelgroup=FIRETVSTICK2020
 ro.vendor.nrdp.validation=ninja_7
 
