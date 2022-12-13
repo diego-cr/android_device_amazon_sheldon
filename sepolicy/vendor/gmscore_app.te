@@ -1,3 +1,4 @@
 allow gmscore_app atci_sys_prop:file { getattr open };
 allow gmscore_app debugfs_ion:dir search;
 allow gmscore_app hal_memtrack_hwservice:hwservice_manager find;
+allow gmscore_app hal_memtrack_default:binder call;
