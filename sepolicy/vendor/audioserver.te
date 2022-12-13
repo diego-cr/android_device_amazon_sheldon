@@ -1,0 +1,3 @@
+allow audioserver init:binder call;
+allow audioserver hal_amzn_audio_default:binder call;
+allow audioserver hal_amzn_audio_default:fd use;

@@ -1,0 +1,9 @@
+allow mediacodec device:chr_file { ioctl open read write };
+allow mediacodec sysfs_bus:dir search;
+allow mediacodec device:chr_file ioctl;
+allow mediacodec proc:file write;
+allow mediacodec sysfs_bus:file { open write };
+allow mediacodec trustzone_device:chr_file { ioctl open read write };
+allow mediacodec mdp_device:chr_file read;
+allow mediacodec mdp_device:chr_file open;
+allow mediacodec mdp_device:chr_file ioctl;

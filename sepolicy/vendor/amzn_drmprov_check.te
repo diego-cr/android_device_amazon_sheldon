@@ -6,3 +6,9 @@ init_daemon_domain(amzn_drmprov_check)
 allow amzn_drmprov_check trustzone_device:chr_file { read write open ioctl getattr };
 allow amzn_drmprov_check vendor_file:dir { read open ioctl getattr };
 allow amzn_drmprov_check kisd:unix_stream_socket connectto;
+allow amzn_drmprov_check default_prop:file read;
+allow amzn_drmprov_check proc:file read;
+allow amzn_drmprov_check default_prop:file open;
+allow amzn_drmprov_check proc:file open;
+allow amzn_drmprov_check default_prop:file getattr;
+allow amzn_drmprov_check proc:file getattr;

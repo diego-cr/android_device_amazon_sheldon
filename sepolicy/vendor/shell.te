@@ -1,0 +1,11 @@
+allow shell kernel:system syslog_read;
+allow shell mirror_data_file:dir getattr;
+allow shell init_exec:lnk_file getattr;
+allow shell linkerconfig_file:dir getattr;
+allow shell postinstall_mnt_dir:dir getattr;
+allow shell rootfs:file getattr;
+allow shell vendor_toolbox_exec:file { execute getattr };
+allow shell init_exec:lnk_file read;
+allow shell device_config_runtime_native_boot_prop:file read;
+allow shell device_config_runtime_native_boot_prop:file open;
+allow shell device_config_runtime_native_boot_prop:file getattr;

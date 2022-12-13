@@ -1,0 +1,7 @@
+allow hwservicemanager hal_amzn_hdmitxinfo_default:binder transfer;
+allow hwservicemanager hal_amzn_hdcp_default:binder call;
+allow hwservicemanager hal_amzn_idme_default:binder call;
+allow hwservicemanager hal_amzn_networkpower_default:binder call;
+allow hwservicemanager hal_amzn_hdmitxinfo_default:binder call;
+allow hwservicemanager init:binder call;
+allow hwservicemanager hal_amzn_audio_default:binder call;

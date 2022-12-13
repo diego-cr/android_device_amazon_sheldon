@@ -1,0 +1,4 @@
+allow mediaserver vendor_file:file read;
+allow mediaserver vendor_file:file open;
+allow mediaserver vendor_file:file getattr;
+allow mediaserver vendor_file:file execute;

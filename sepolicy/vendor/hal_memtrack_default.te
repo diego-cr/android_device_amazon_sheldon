@@ -1,0 +1,5 @@
+allow hal_memtrack_default debugfs_ion_mm_heap:dir search;
+allow hal_memtrack_default debugfs_ion_mm_heap:file { getattr open read };
+allow hal_memtrack_default default_prop:file read;
+allow hal_memtrack_default default_prop:file open;
+allow hal_memtrack_default default_prop:file getattr;

@@ -1,0 +1,4 @@
+allow tee trustzone_device:chr_file { read write };
+allow tee trustzone_device:chr_file open;
+allow tee trustzone_device:chr_file ioctl;
+allow tee vendor_default_prop:property_service set;

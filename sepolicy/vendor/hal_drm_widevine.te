@@ -1,0 +1,6 @@
+allow hal_drm_widevine device:chr_file { ioctl open read write };
+allow hal_drm_widevine kisd:unix_stream_socket connectto;
+allow hal_drm_widevine device:chr_file ioctl;
+allow hal_drm_widevine trustzone_device:chr_file { read write };
+allow hal_drm_widevine trustzone_device:chr_file open;
+allow hal_drm_widevine trustzone_device:chr_file ioctl;

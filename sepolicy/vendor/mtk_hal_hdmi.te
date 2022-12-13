@@ -1,0 +1,9 @@
+allow mtk_hal_hdmi block_device:blk_file { open read write };
+allow mtk_hal_hdmi system_prop:file { getattr open read };
+allow mtk_hal_hdmi vendor_default_prop:property_service set;
+allow mtk_hal_hdmi block_device:dir search;
+allow mtk_hal_hdmi vendor_system_prop:file read;
+allow mtk_hal_hdmi vendor_system_prop:property_service set;
+allow mtk_hal_hdmi system_prop:file read;
+allow mtk_hal_hdmi vendor_system_prop:file open;
+allow mtk_hal_hdmi vendor_system_prop:file getattr;

@@ -1,1 +1,3 @@
 allow kisd trustzone_device:chr_file rw_file_perms;
+allow kisd device:chr_file ioctl;
+allow kisd device:chr_file { read write };
